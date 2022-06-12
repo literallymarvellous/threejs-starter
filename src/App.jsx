@@ -2,7 +2,11 @@ import { useState } from "react";
 import "./App.scss";
 
 function App() {
-  return <div className="App">Hi</div>;
+  return (
+    <Canvas camera={{ position: [0, 0, 2], fov: 75 }}>
+      <Scene />
+    </Canvas>
+  );
 }
 
 export default App;
